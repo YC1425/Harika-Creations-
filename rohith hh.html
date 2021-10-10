@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RECYCLE THEM...</title>
+        <link rel="recycle them" href="https://www.recyclethem.com">
+    <style>
+        .dot {
+              height:5px;
+              width:5px;
+              margin: 0 1px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display:inline-block;
+              transition: background-color 0.5s ease;
+          }
+
+          .active {
+              background-color: #444444;
+          }
+          /* Fading animation */
+          .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+          }
+            
+          @-webkit-keyframes fade {
+              from {opacity: .6} 
+              to {opacity: 1}
+          }
+            
+          @keyframes fade {
+              from {opacity: .6} 
+              to {opacity: 1}
+          }
+        .mySlides {display:center;}
+        img {
+            border-style: double;
+            border-left: 10%;
+            border-right: 10%;
+            border-color: white;
+            max-height:500px;
+            max-width:500px;
+        }
+        .slideshow-container {
+            width:1000px;
+            padding-top:1%;
+            margin-right:auto;
+            margin-left: auto;
+            display:left;
+            float:left;
+            width: 1500px;
+            height:700px;
+            position: initial;
+        }
+        .not { 
+            overflow:hidden;
+            border: 1px solid black;
+            background-color:green;
+            height: 40%;
+        } 
+        button {
+                display: block;
+                color:black;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+                
+        }
+        .not button:hover {
+                     background-color:black;
+                      color:green;
+        }
+        /* Create an active/current tablink class */
+        .not button.active {
+                             background-color: rgb(24, 77, 4);
+        }
+        .not button {
+              background-color:green;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding:12px 14px;
+              transition: 0.3s;
+              font-size: 17px;
+        }
+        .mean .search-container {
+         float: right;
+         width: 50%;
+        }
+        .mean input[type=text] {
+         padding: 6px;
+         margin-top: 8px;
+         font-size: 17px;
+         border: solid;
+         width:85%;
+        }
+        .mean .search-container button {
+            float: right;
+            padding: 8px 16px;
+            margin-top: 8px;
+            margin-right:15px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .mean .search-container button:hover {
+            background: #ccc;
+        }
+        @media screen and (max-width: 600px) {
+            .mean .search-container {
+                float:right;
+            }
+            .mean input[type=text],
+            .mean .search-container button {
+                float: right;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 20px;
+            }
+            .mean input[type=text] {
+                border: 1px solid rgb(59, 59, 59);
+            }
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color:orangered;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        h6{
+            color:green;
+        }
+    </style>  
+    </head>
+    <body>
+        <div>
+            <div class= "but">
+               <div class="mean">
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">search</button>
+                        </form>
+                    </div>
+               </div>
+               <h1>Harika.</h1>
+               <h6>&emsp;&emsp;&emsp;Recycle Them...</h6>
+            </div>
+            <div class="not">
+                <button class="tablinks"onclick="opencity(event,'Home')">Home</button>
+                <button class="tablinks"onclick="opencity(event,'men')">men</button>
+                <button class="tablinks"onclick="opencity(event,'women')">women</button>
+                <button class="tablinks"onclick="opencity(event,'tailors')">tailors</button>
+                <button class="tablinks"onclick="opencity(event,'accessories')">accessories</button>
+                <button class="tablinks"onclick="opencity(event,'about us')">about us</button>
+            </div>
+        </div>
+        <div id="Home" class="tabcontent">
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>                
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+               <img src="https://2.bp.blogspot.com/-cYVKZl8_J_o/Wcfyn-z1mRI/AAAAAAAAKuY/ECrmWFisxjsiQO-Qc33tAOhIKEp_-vLuACLcBGAs/s1600/Latest%2Bsaree%2Bdraping%2Bstyles%2B%252867%2529.jpg"style="float:right">
+               <p>The fashion looks you more beautiful...</p>
+              </div>
+              <div class="mySlides fade">
+               <img src="https://g3fashion.cdn.imgeng.in/blog/wp-content/uploads/2021/06/mens-casual-wear-585x718.jpg">
+               <p></p>
+              </div>
+              <div class="mySlides fade">
+               <img srC="https://3.bp.blogspot.com/-hOkU5k-sa2Q/WcoWYIWxOHI/AAAAAAAAKzQ/rfrozOuTW0k5cxIzGdJAURuIB4qposrZwCLcBGAs/s1600/saree%2Bdraping%2Bstyles%2B%252812%2529.jpg"style="float:right">
+               <p></p>
+              </div>
+              <div class="mySlides fade">
+               <img src="https://cdn.shopify.com/s/files/1/0162/2116/files/CASUAL_STREET_FOR_MEN.jpg?v=1514879175">
+               <p></p>
+              </div>
+              <div class="mySlides fade">
+               <img src="https://1.bp.blogspot.com/-ZZ8bNBMn4js/WcfyZ9WDoSI/AAAAAAAAKuU/bNqylIFkmrIjXZCcCiZszkTuGMJZS995QCLcBGAs/s1600/Latest%2Bsaree%2Bdraping%2Bstyles%2B%252834%2529.jpg"style="float:right">
+               <p></p>
+              </div>
+            </div>
+            <div>
+                <img src="https://www.southindiafashion.com/wp-content/uploads/2015/07/new_look_for_old_sarees.jpg"style="float:left">
+                <img src="https://i0.wp.com/frugal2fab.com/wp-content/uploads/2017/05/35.jpg?w=564&ssl=1"style="float:right">
+                <br>
+                <img src="https://manofmany.com/wp-content/uploads/2017/11/Guide-mens-smart-casual-dress-code15.jpg"style="float:left">
+                <img src="https://i.pinimg.com/originals/da/b9/b5/dab9b536572ae4fe150cbf6a967cf485.jpg"style="float:right">
+                <br>
+                <img src="https://i1.wp.com/frugal2fab.com/wp-content/uploads/2017/05/37-Etsy.jpg?fit=564%2C705&ssl=1"style="float:left">
+                <img src="https://simplecraftidea.com/wp-content/uploads/2018/11/Convert-your-old-saree-15.jpg"style="float:right">
+                <br>
+                <img src="https://g3fashion.cdn.imgeng.in/blog/wp-content/uploads/2021/06/mens-casual-wear-585x718.jpg"style="float:left">
+                <img src="https://1.bp.blogspot.com/--4wSeO608Zo/YB-p3UffdLI/AAAAAAAHg7U/XNQp3xsAPFUPg0htZk45D3vqvYUMqCU0QCLcBGAsYHQ/s1280/IMG-20210207-WA0024.jpg"style="float:right">
+                <br>
+                <img src="https://i0.wp.com/shaadiwish.com/blog/wp-content/uploads/2020/03/saree-draping-styles-822x1024.jpg"style="float:left">
+                <img src="https://deemasfashion.com/wp-content/uploads/Pistacho-green-purple-sharara.jpg"style="float:right">
+                <br>
+                <img src="https://frugal2fab.com/wp-content/uploads/2017/05/21-Banarasi-Designs.jpg"style="float:left">
+                <img src="https://cdn.shopify.com/s/files/1/0162/2116/files/CASUAL_STREET_FOR_MEN.jpg?v=1514879175"style="float:right">
+
+
+            </div>
+        </div> 
+        <br>
+        <div id="men" class="tabcontent">
+            <img src="https://images.indianexpress.com/2018/01/men-fashion-759-filephoto.jpg">
+            <img src="https://pbs.twimg.com/media/Dp3ihOtXgAA_eEP?format=jpg&name=900x900">
+            <img src="https://cdn.shopify.com/s/files/1/0162/2116/files/CASUAL_STREET_FOR_MEN.jpg?v=1514879175"style="float:right">
+            <img src=" https://manofmany.com/wp-content/uploads/2017/11/Guide-mens-smart-casual-dress-code15.jpg"style="float:right">
+        </div>
+        <div id="women" class="tabcontent">
+            <img src="https://2.bp.blogspot.com/-cYVKZl8_J_o/Wcfyn-z1mRI/AAAAAAAAKuY/ECrmWFisxjsiQO-Qc33tAOhIKEp_-vLuACLcBGAs/s1600/Latest%2Bsaree%2Bdraping%2Bstyles%2B%252867%2529.jpg"style="float:right">
+            <img src="https://www.southindiafashion.com/wp-content/uploads/2015/07/new_look_for_old_sarees.jpg"style="float:left">
+            <img src="https://i1.wp.com/frugal2fab.com/wp-content/uploads/2017/05/37-Etsy.jpg?fit=564%2C705&ssl=1"style="float:left">
+            <img src="https://1.bp.blogspot.com/--4wSeO608Zo/YB-p3UffdLI/AAAAAAAHg7U/XNQp3xsAPFUPg0htZk45D3vqvYUMqCU0QCLcBGAsYHQ/s1280/IMG-20210207-WA0024.jpg"style="float:right">
+        </div>
+        <div id="tailors" class="tabcontent">
+        </div>
+        <div id="accessories" class="tabcontent">
+
+        </div>
+        <div id="about us" class="tabcontent">
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides(slideIndex);
+          //to show moving of photos
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 5000); 
+               // Change image every 5 seconds
+                } 
+                function opencity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    }
+        </script>
+
+    </body>
+</html>
